@@ -34,25 +34,25 @@ nav{
 }
 header{
     background-color: #230903;
-    background-image: linear-gradient(315deg, #230903 0%, #d3b88c 74%);
-   position: fixed;
-   height: 50px;
-   top: 0;
-   left: 0;
-   width: 100%;
-   padding: 20px 120px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   z-index: 100;
-   padding-left: 0px;
-}
-
-nav #logo{
-    width: 120px;
-    box-sizing: border-box; 
-   
-}
+ background-image: linear-gradient(315deg, #230903 0%, #d3b88c 74%);
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding-left: 0px;
+ }
+ 
+ nav #logo{
+     width: 230px;
+     box-sizing: border-box; 
+    
+ }
 
 
 nav ul li {
