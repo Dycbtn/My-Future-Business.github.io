@@ -3,46 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downhill Mountain bike</title>
-    <link rel="stylesheet" href="stylec.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bin">
+    
+    <nav class="navbar navbar-expand-lg navbar-light  bg-dark navi sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="logobike.png" alt="" srcset=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end navitems" id="navbarSupportedContent" >
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0" >
+              <li class="nav-item">
+                <a class="nav-link active text-white"  aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="partnership.html">Partnership</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div id="home" class="divi"></div>
+      </nav>
 
-        <header>
-            <nav>
 
-                <img src="logobike.png" alt="logo" id="logo">
-                <ul>
-                    <li ><a href="index.html">Home</a></li>
-                    <li><a href="partner.html">Partnership</a></li>
-                    <li><a href="products.html">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-
-           </header>
-
-           <div class="row">
-            <div class="container">
-                <div class="content">
-                    <h2>Contact Us : </h2> <br> <br>
-                    <p> FOR MORE INQUIRES CONTACT OWNER: </p> <br>
-                    <p> CELLPHONE NO: 09056039262 </p>
-                    <p> LOCATION: Marilao,Bulacan </p>
-                    <p> OPEN TO 7 A.M - 10 P.M</p>
-                    
-                </div>
-                <div class="image">
-                    <img src="OWNER.png">
-                </div>
-            </div>
 
       
-    </div>
-       
-            
-    
-    
+<h1 id="contact" class="busines"> CONTACT US </h1>
+
+ <div class="contacto">
+         
+
+<div class="row3">
+
+    phone : 09056039262 <br>
+    email : downhillbike@gmail.com <br>
+    Opening Hours: 7 A.M - 10 P.M <br>
+    Open Monday - Saturday <br>
+  
+   
+  
+  </div>
+  
+  <div class="row5">
+          
+    <form id="contactForm">
+      <p class="partners">send us a message</p>
+      <label for="email">Email:</label>
+      <input class="style" type="email" id="email" name="email" required><br><br>
+  
+      <label for="phone">Contact Number:</label>
+      <input class="style" type="text" id="phone" name="phone" required><br><br>
+  
+      <label for="message">Message:</label><br>
+      <textarea class="style" id="message" name="message" rows="4" required></textarea><br><br>
+  
+      <button class="buttons" type="submit">Submit</button>
+  </form>
+  </div>
+  
+  <div class="map">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61727.48758534209!2d120.97526620000001!3d14.770834099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b28adc9e7743%3A0xcf6fcb1452bab334!2sMarilao%2C%20Bulacan!5e0!3m2!1sen!2sph!4v1706277367226!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  
+
+  
+
+  
+ </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <script>
+  
+  
+        // Javascript code na reusable para sa modal.
+        // Function to initialize modal behavior
+        function initializeModal(modalId) {
+          var modal = document.getElementById(modalId);
+          var openModalBtns = document.querySelectorAll('[data-modal-id="' + modalId + '"]');
+          var closeModal = modal.querySelector('.close');
+  
+          openModalBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+              modal.style.display = "block";
+            });
+          });
+  
+          closeModal.addEventListener('click', function() {
+            modal.style.display = "none";
+          });
+  
+          window.addEventListener('click', function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          });
+        }
+  
+        // Initialize modals
+        document.addEventListener('DOMContentLoaded', function() {
+          var modals = document.querySelectorAll('.modal');
+          modals.forEach(function(modal) {
+            initializeModal(modal.id);
+          });
+        });
+  
+      </script>
 </body>
+</html>
