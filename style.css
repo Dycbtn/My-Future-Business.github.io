@@ -256,7 +256,7 @@
     height: 220px;
     margin-bottom: 100px;
     border-radius: 30px;
-    margin-left: -150px;
+    margin-left: 150px;
     font-size: 30px;
     text-align: center;
 }
@@ -267,17 +267,19 @@
   background-color: #B0926A;
   color: #EBD9B4;
   width: 800px;
-  height: 1050px;
+  height: 900px;
   margin-bottom: 100px;
   border-radius: 30px;
-  margin-left: 250px;
-  font-size: 30px;
+  margin-top:500px;
+  font-size: 20px;
   text-align: center;
+  margin-left: 1000px;
+
 }
 
 .map{
   width: 1000px;
-  margin-left: 75px;
+  margin-left: 200px;
   height: 800px;
   margin-bottom: 300px;
 }
@@ -997,14 +999,14 @@
   padding: 20px;
   background-color: #B0926A;
   color: #EBD9B4;
-  width: 400px;
-  height: 600px;
+  width: 800px;
+  height: 900px;
   margin-bottom: 100px;
   border-radius: 30px;
   margin-top: 100px;
   font-size: 20px;
   text-align: center;
-  margin-left: -5px;
+  margin-left: 500px;
 }
 
     /* malaking screen ahead*/
